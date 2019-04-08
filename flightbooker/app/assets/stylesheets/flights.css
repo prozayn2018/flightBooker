@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Nothing+You+Could+Do|Nunito|Open+Sans+Condensed:300|Sniglet');
+body {
+
+}
+
+#wrapper{
+
+
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: white;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%)
+
+}
+
+#container{
+
+ position: absolute;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows:  70px 820px 70px;
+ min-width: 100%;
+ max-width: 100%;
+ min-height: 100%;
+ max-height: 100%;
+ float: left;
+ z-index:8;
+
+}
+
+.grid-item{
+  position: relative;
+  background: rgb(224, 68, 51);
+
+}
+
+#top{
+  background-color: rgb(114, 78, 229);
+}
+
+#body{
+  background-color: white;
+}
+
+#plane{
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  font-size: 40px;
+  color: white;
+  z-index: 8px;
+}
+
+#compname{
+  position: absolute;
+  left: 70px;
+  top: 22px;
+  font-family: 'Sniglet', cursive;
+  font-size: 25px;
+  color: white;
+}
+
+#maps{
+  position: absolute;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  left: 725px;
+  top: 24px;
+}
+
+#about{
+  position: absolute;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  left: 785px;
+  top: 24px;
+}
+
+#dropdown{
+  position: absolute;
+  left: 850px;
+  top: 20px;
+  background-color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+#menu{
+  word-break: normal;
+}
+
+#astro{
+  position: absolute;
+  right: 50px;
+  top: 38px;
+  color: rgb(114, 78, 229);
+}
+
+#picture{
+  position: absolute;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  opacity: .6;
+}
+
+#signin{
+  border-bottom: 1px solid rgb(219, 214, 214);
+}
+
+#dropsignout{
+  border-top: 1px solid rgb(219, 214, 214);
+}
+
+#buttoncol{
+  position: absolute;
+  background-color: white;
+  color: rgb(114, 78, 229);
+  border-color: white;
+  font-size: 18px;
+  top: -2px;
+}
+
+#bodytitle{
+  position: absolute;
+  left: 200px;
+  top: 40px;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 40px;
+  color: rgb(114, 78, 229);
+
+}
+
+#passenger{
+  position: absolute;
+  left: 181px;
+  top: 200px;
+}
+
+#passbtn{
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+  opacity: .8;
+}
+
+#passmenu{
+  position: absolute;
+  top: 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+#seatmenu{
+  position: absolute;
+  top: 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+
+#frommenu{
+  position: absolute;
+  top: 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+#tomenu{
+  position: absolute;
+  top: 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+#departmenu{
+  position: absolute;
+  top: 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+#pass1{
+  border-bottom: 1px solid rgb(219, 214, 214);
+  padding-bottom: 8px;
+  font-weight: lighter;
+}
+
+#pass2{
+  background-color: rgb(232, 234, 242);
+  font-weight: lighter;
+}
+
+#pass3{
+  border-top: 1px solid rgb(219, 214, 214);
+  padding-bottom: 12px;
+  font-weight: lighter;
+}
+
+#eco{
+  border-bottom: 1px solid rgb(219, 214, 214);
+  padding-bottom: 8px;
+  font-weight: lighter;
+}
+
+#biz{
+  background-color: rgb(232, 234, 242);
+  font-weight: lighter;
+}
+
+#royal{
+  border-top: 1px solid rgb(219, 214, 214);
+  padding-bottom: 12px;
+  font-weight: lighter;
+}
+
+
+#sf{
+  border-bottom: 1px solid rgb(219, 214, 214);
+  padding-bottom: 8px;
+  font-weight: lighter;
+  color: rgb(26, 142, 224);
+  font-weight: bold;
+}
+
+#ny{
+  background-color: rgb(232, 234, 242);
+  font-weight: lighter;
+  color: rgb(26, 142, 224);
+  font-weight: bold;
+}
+
+#par{
+  border-top: 1px solid rgb(219, 214, 214);
+  padding-bottom: 13px;
+  font-weight: lighter;
+  color: rgb(26, 142, 224);
+  font-weight: bold;
+}
+
+
+#sfto{
+  border-bottom: 1px solid rgb(219, 214, 214);
+  padding-bottom: 8px;
+  font-weight: lighter;
+  color: rgb(26, 142, 224);
+  font-weight: bold;
+}
+
+#nyto{
+  background-color: rgb(232, 234, 242);
+  font-weight: lighter;
+  color: rgb(26, 142, 224);
+  font-weight: bold;
+}
+
+#parto{
+  border-top: 1px solid rgb(219, 214, 214);
+  padding-bottom: 13px;
+  font-weight: lighter;
+  color: rgb(26, 142, 224);
+  font-weight: bold;
+}
+
+#ap1{
+  border-bottom: 1px solid rgb(219, 214, 214);
+  padding-bottom: 8px;
+  font-weight: lighter;
+}
+
+#ap2{
+  background-color: rgb(232, 234, 242);
+  font-weight: lighter;
+}
+
+#ap3{
+  border-top: 1px solid rgb(219, 214, 214);
+  padding-bottom: 12px;
+  font-weight: lighter;
+}
+
+
+#from{
+  position: absolute;
+  top: 250px;
+  left: 160px;
+}
+
+#to{
+  position: absolute;
+  top: 250px;
+  left: 530px;
+}
+
+#depart{
+  position: absolute;
+  top: 313px;
+  left: 160px;
+}
+
+#search{
+  position: absolute;
+  top: 380px;
+  left: 180px;
+  position: absolute;
+  background-color: rgb(114, 78, 229);
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  min-width: 660px;
+  max-width: 660px;
+  min-height: 60px;
+  max-height: 60px;
+  border-color: transparent;
+  text-align: left;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#seatclass{
+  position: absolute;
+  left: 320px;
+  top: 200px;
+}
+
+#seatbtn{
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+  opacity: .8;
+}
+
+#searchcircle{
+  position: absolute;
+  left: 320px;
+  top: 15px;
+  color: white;
+  font-size: 27px;
+}
+
+#frombtn{
+  position: absolute;
+  background-color: rgb(227, 229, 229);
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  min-width: 290px;
+  max-width: 290px;
+  min-height: 60px;
+  max-height: 60px;
+  border-color: transparent;
+  left: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#tobtn{
+  position: absolute;
+  background-color: rgb(227, 229, 229);
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  min-width: 290px;
+  max-width: 290px;
+  min-height: 60px;
+  max-height: 60px;
+  border-color: transparent;
+  left: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#deparbtn{
+  position: absolute;
+  background-color: rgb(227, 229, 229);
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  min-width: 660px;
+  max-width: 660px;
+  min-height: 60px;
+  max-height: 60px;
+  border-color: transparent;
+  left: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#exchange {
+  position: absolute;
+  top: 260px;
+  left: 490px;
+  font-size: 40px;
+
+}
+
+#footer{
+  background-color: rgb(33, 39, 45);
+  outline-color: blue;
+
+}
+
+#foottext1{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  color: rgb(207, 210, 214);
+  font-weight: lighter;
+}
+
+#foottext2{
+  position: absolute;
+  left: 10px;
+  top: 35px;
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  color: rgb(207, 210, 214);
+  font-weight: lighter;
+}
+
+#git{
+  position: absolute;
+  top: 15px;
+  left: 420px;
+  font-size: 24px;
+  color: white;
+}
+
+#linkedin{
+  position: absolute;
+  top: 15px;
+  left: 460px;
+  font-size: 24px;
+  color: white;
+}
+
+#email{
+  position: absolute;
+  top: 15px;
+  left: 500px;
+  font-size: 24px;
+  color: white;
+}

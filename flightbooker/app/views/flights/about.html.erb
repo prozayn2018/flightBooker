@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/js" href="about.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+  </head>
+  <body>
+   <div id=wrapper>
+    <div id="container" class="grid-container">
+      <div id="top" class="grid-item">
+        <i id="plane" class="far fa-paper-plane"></i>
+        <p id="compname">ZoZo Flights</p>
+        <p id="about">About</p>
+
+        <div id="dropdown" class="dropdown">
+          <button id="buttoncol" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </button>
+         <div id="menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a id="signin" class="dropdown-item" href="#">Signed in as: <br> Zayneel <i id="astro" class="fas fa-user-astronaut"></i> </a>
+          <a id="droplogin"class="dropdown-item" href="#">Login</a>
+          <a id="dropsign" class="dropdown-item" href="#">Signup</a>
+          <a id="dropsignout" class="dropdown-item" href="#">Signout</a>
+         </div>
+        </div>
+      </div>
+      <div id="body" class="grid-item">
+        <%= image_tag("cloud.jpg", :alt => "rss feed", :id => 'picture') %>
+        <h2 id="about1"> About ZoZo Flights:</h2>
+        <p id="para"> I developed this project in order to practice Ruby on Rails framework features. In particular,
+        <br> using ActiveRecord as a database layer interacting with the forms on the client-side.
+        <br> In addition, to work with Rails login/auth gems. <br>
+        <br>This project was built using: Ruby on Rails, JavaScript (jQuery/Bootstrap)<br></p>
+
+      </div>
+      <div id="footer" class="grid-item">
+        <p id="foottext1"> © 2019 ZoZo Flights, Inc.</p>
+        <p id="foottext2"> Find the cheapest and best flight for you!</p>
+        <i id="git" class="fab fa-github"></i>
+        <i id="linkedin" class="fab fa-linkedin"></i>
+        <i id="email" class="far fa-envelope"></i>
+
+      </div>
+    </div>
+  </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="flights_main.js"></script>
+</html>
