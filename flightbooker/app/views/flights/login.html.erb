@@ -10,14 +10,16 @@ ZoZo Flights
 <div class="photo">
 </div>
 <span>Sign in to your ZoZo Flights Account</span>
-<form action="" id="login-form">
+
+<%= form_for(:session, url: flights_login_path) do |f| %>
+
 <div id="u" class="form-group">
-  <input id="username" spellcheck=false class="form-control" name="username" type="text" size="18" alt="login" required="">
+  <input id="session_email" spellcheck=false class="form-control" name="session[email]" type="text" size="18" alt="login" required="">
   <span class="form-highlight"></span>
   <span class="form-bar"></span>
   <label for="username" class="float-label">Email</label>
   <erroru>
-  	Username is required
+  	Email is required
   	<i>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 		    <path d="M0 0h24v24h-24z" fill="none"/>
@@ -27,7 +29,7 @@ ZoZo Flights
   </erroru>
 </div>
 <div id="p" class="form-group">
-  <input id="password" class="form-control" spellcheck=false name="password" type="password" size="18" alt="login" required="">
+  <input id="session_password" class="form-control" spellcheck=false name="session[password]" type="password" size="18" alt="login" required="">
   <span class="form-highlight"></span>
   <span class="form-bar"></span>
   <label for="password" class="float-label">Password</label>
@@ -44,9 +46,10 @@ ZoZo Flights
 <div class="form-group">
 <input type="checkbox" id="rem">
 <label for="rem">Stay Signed in</label>
-<button id="submit" type="submit" ripple>Sign in</button>
+<%= f.submit "Sign up !", class: "btn btn-primary" %>
 </div>
 </form>
-<footer><a href="#0">Create an account</a></footer>
+<% end %>
+<footer><a href="#0"><%= link_to "Create an account!", flights_signup_path %></a></footer>
 
 </div>
